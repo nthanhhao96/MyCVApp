@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
     <ion-title>
       Contact
     </ion-title>
@@ -7,17 +10,26 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>
-      <ion-label>
-        Follow us on Twitter
-      </ion-label>
-    </ion-list-header>
+  <!-- Contact information -->
     <ion-item>
-      <ion-label>
-        <ion-icon name="logo-ionic" slot="start"></ion-icon>
-        @ionicframework
-      </ion-label>
-    </ion-item>
-  </ion-list>
+        <ion-label>Fullname</ion-label>
+        <ion-input value="Nguyen, Thanh Hao"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input value="nthanhhao96@gmail.com" type="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label stacked>Phone</ion-label>
+          <ion-input value="+358 469433990" type="tel"></ion-input>
+        </ion-item>
+
+      <ion-item>
+          <ion-label floating>Linkedin</ion-label>
+          <ion-input value="https://www.linkedin.com/in/thanh-hao-nguyen/" type="email"></ion-input>
+        </ion-item>
+
 </ion-content>
+<!-- Hao Nguyen - 1601800 -->

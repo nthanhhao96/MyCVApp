@@ -9,6 +9,25 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
+  // Sidemenu
+  public appPage = [
+    {
+      title: 'Home',
+      url: '',
+      icon: 'home'
+}, {
+  title: 'Targeted CV',
+  url: '/cv',
+  icon: 'star'
+}, {
+  title: 'Project Work',
+  url: '/projects',
+  icon: 'laptop'
+}, {
+  title: 'Extra Curriculum activities',
+  url: '/curriculum',
+  icon: 'school'
+} ];
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -24,3 +43,5 @@ export class AppComponent {
     });
   }
 }
+// Hao Nguyen - 1601800
+
