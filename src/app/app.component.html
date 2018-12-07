@@ -7,16 +7,19 @@
         </ion-toolbar>
       </ion-header>
       <ion-content padding>
-          <ion-list>
-            <!-- Routes for the sidemenu -->
-            <ion-menu-toggle *ngFor="let p of appPage">
-                <ion-item [routerLink]="p.url" [routerDirection]="'root'">
-                    <ion-icon slot="start"  [name]="p.icon"></ion-icon>
-                    <ion-label>{{p.title}}</ion-label>
-                  </ion-item>
-            </ion-menu-toggle>
-          </ion-list>
-        </ion-content>
+        <ion-list>
+          <!-- Routes for the sidemenu -->
+          <ion-menu-toggle *ngFor="let p of appPage">
+            <ion-item [routerLink]="p.url" [routerDirection]="'root'">
+              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+              <ion-label>{{p.title}}</ion-label>
+            </ion-item>
+            
+          </ion-menu-toggle>
+          <ion-button (click)="logout()">Logout</ion-button>
+
+        </ion-list>
+      </ion-content>
     </ion-menu>
     <ion-router-outlet main>
     </ion-router-outlet>

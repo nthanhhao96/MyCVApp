@@ -1,0 +1,33 @@
+<ion-header>
+  <!-- Looks better without navbar
+    <ion-navbar>
+      <ion-title>WhatIsMyTime - Login</ion-title>
+    </ion-navbar>
+  -->
+  </ion-header>
+  
+  <ion-content class="bg-image no-scroll" padding>
+  
+    <h5  class="logotext" style="text-align: center;">Hao Nguyen - CV App</h5>
+      <ion-list>
+  
+          <ion-item class="login">
+            <ion-label position="floating">Email</ion-label>
+            <ion-input class="inputtext" type="text" #username></ion-input>
+          </ion-item>
+        
+          <ion-item class="login">
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" #password></ion-input>
+          </ion-item>
+        
+        </ion-list>
+  
+    <div padding>
+  
+        <ion-button expand="full" (click)="signInUser()">Log in</ion-button>
+        <ion-button expand="full" (click)="push()">Don't have an account? Register</ion-button> 
+  
+    </div>
+  </ion-content>
+  <!-- Hao Nguyen - 1601800 -->

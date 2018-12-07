@@ -42,4 +42,4 @@ export class CurriculumPage implements OnInit {
   }
 
 }
-// <!-- Hao Nguyen - 1601800 -->
+// Hao Nguyen - 1601800

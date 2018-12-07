@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="bg-image no-scroll" padding>
+
+<ion-list>
+
+  <ion-item class="login">
+    <ion-label class="inputtext" position="floating">Email</ion-label>
+    <ion-input type="text" #username></ion-input>
+  </ion-item>
+
+  <ion-item class="login">
+    <ion-label class="inputtext" position="floating">Password</ion-label>
+    <ion-input type="password" #password></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<div padding>
+  <ion-button href="/login" routerDirection="backward">Back</ion-button>
+  <ion-button (click)="RegisterUser()">Register</ion-button>
+</div>
+
+</ion-content>
+<!-- Hao Nguyen - 1601800 -->
